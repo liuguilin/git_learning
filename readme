@@ -1,0 +1,34 @@
+                    文件提交
+
+输入 git init （如果为第一次，就输入该命令初始化目录，否则可直接跳过）
+
+输入 git add 目录名称（添加需要提交的目录名称）
+
+输入 git commit -m "备注说明"（提交至本地仓库，并简单说明）
+
+输入 git remote add origin ssh://XXXXXXXXXXXXX.git (如果为第一次使用需要重定向提交的路径)
+
+输入 git push -u origin master（提交至远程仓库）
+
+输入 git pull --rebase origin master 命令将远程仓库的文件拉下来覆盖本地文件
+
+输入 git push origin master -f 强行提交并覆盖远程仓库内文件
+
+
+
+                修改commit记录
+
+输入 git commit --amend 修改最近一次commit的提交记录
+
+输入 git rebase -i commitId 变基修改commit记录
+
+
+                    回滚
+输入 git reset --hard HEAD^ 回滚上一次的commit版本，操作文件
+
+输入 git reset –-soft HEAD~1 回退到某个版本，只回退了commit的信息，不操作文件
+
+                    更新
+                    
+输入 git fetch --all && git reset --hard origin/master && git pull  强制远程覆盖本地代码
+                     
