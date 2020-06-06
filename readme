@@ -1,4 +1,19 @@
-Hi,we are learning Git together.
-Have a good time!
+输入 git init （如果为第一次，就输入该命令初始化目录，否则可直接跳过）
 
-good good study,day day up; I am study
+输入 git add 目录名称（添加需要提交的目录名称）
+
+输入 git commit -m "备注说明"（提交至本地仓库，并简单说明）
+
+输入 git remote add origin ssh://XXXXXXXXXXXXX.git (如果为第一次使用需要重定向提交的路径)
+
+输入 git push -u origin master（提交至远程仓库）
+
+git pull --rebase origin master 远程仓库的文件拉下来覆盖本地文件
+
+
+// .gitignore
+# 忽略目录
+node_modules/
+
+# 忽略文件
+package-lock.json
