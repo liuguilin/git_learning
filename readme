@@ -31,4 +31,11 @@
                     更新
                     
 输入 git fetch --all && git reset --hard origin/master && git pull  强制远程覆盖本地代码
+
+
+                修改密码
+输入 git config --system --unset credential.helper 修改本地密码（此操作是克隆项目时账号密码错误使用，可以在克隆报错时自动提示键入密码）
+
+输入 git config --global credential.helper store 保存git密码
+
                      
