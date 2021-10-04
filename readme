@@ -40,9 +40,9 @@
 
             修改commit的邮箱和用户名
 git filter-branch -f --env-filter '
-OLD_EMAIL="原来的邮箱"
-CORRECT_NAME="现在的名字"
-CORRECT_EMAIL="现在的邮箱"
+OLD_EMAIL="jeryliu@tencent.com"
+CORRECT_NAME="develop"
+CORRECT_EMAIL="develop@qq.com"
 if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
 then
     export GIT_COMMITTER_NAME="$CORRECT_NAME"
